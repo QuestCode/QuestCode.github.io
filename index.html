@@ -1,324 +1,259 @@
+<!DOCTYPE HTML>
 <!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Devontae's Personal Website</title>
-  <link rel="icon" type="images/jpg" href="dev_logo.jpg"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<script type="application/x-javascript">
-		addEventListener("load", function () {
-			setTimeout(hideURLbar, 0);
-		}, false);
+<html>
+	<head>
+		<title>Devontae's Personal Site</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
 
-		function hideURLbar() {
-			window.scrollTo(0, 1);
-		}
-	</script>
-	<!-- Custom Theme files -->
-	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-	<!--gallery -->
-	<link type="text/css" rel="stylesheet" href="css/cm-overlay.css" />
-	<!-- //gallery -->
-	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
-	<link href="css/font-awesome.css" rel="stylesheet">
-	<!-- font-awesome icons -->
-	<!--//Custom Theme files-->
-	<!-- js -->
-	<script src="js/jquery-2.2.3.min.js"></script>
-	<!-- //js -->
-	<!-- web-fonts -->
-	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=Arsenal:400,400i,700,700i" rel="stylesheet">
-	<!-- //web-fonts -->
-</head>
+		<!-- Header -->
+			<div id="header">
 
-<body>
-	<!-- banner -->
-	<div id="home" class="banner">
-		<div class="banner-agileinfo">
-			<!-- header -->
-			<div class="header">
-				<div class="container">
-					<div class="menu">
-						<a href="" id="menuToggle"> <span class="navClosed"></span> </a>
-						<nav>
-							<a href="#home" class="active scroll">Home</a>
-							<a href="#about" class="scroll">About Me</a>
-							<a href="#skills" class="scroll">Skills</a>
-							<a href="#gallery" class="scroll">My Work</a>
-							<a href="#services" class="scroll">Services</a>
-							<a href="#contact" class="scroll">Contact</a>
-						</nav>
-						<script>
-							(function ($) {
-								// Menu Functions
-								$(document).ready(function () {
-									$('#menuToggle').click(function (e) {
-										var $parent = $(this).parent('.menu');
-										$parent.toggleClass("open");
-										var navState = $parent.hasClass('open') ? "hide" : "show";
-										$(this).attr("title", navState + " navigation");
-										// Set the timeout to the animation length in the CSS.
-										setTimeout(function () {
-											console.log("timeout set");
-											$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
-										}, 200);
-										e.preventDefault();
-									});
-								});
-							})(jQuery);
-						</script>
+				<div class="top">
 
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
-			<!-- //header -->
-			<div class="banner-text">
-				<div class="container">
-					<h1><a href="index.html">Devontae Reid</a></h1>
-					<h2 class="w3ls-bnrtext">I am <span>UI </span> Designer</h2>
-					<p class="w3ls-p">A Creative iOS and web developer</p>
-					<a href="#about" class="buy btn-wayra scroll">Explore my work</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //banner -->
-	<!-- about -->
-	<div class="agile-about w3ls-section text-center" id="about">
-		<div class="container">
-			<h3 class="agileits-title">about me</h3>
-			<div class="agileits-about-grid">
-				<p>I am an iOS developer currently at California State University, Fullerton
-          studying Computer Science. I am also a sport enthusiast who really loves the
-          game of football. If I am not programming I am watching sports.
-         </p>
-			</div>
-			<a href="#contact" class="wthree- about-link scroll">hire me</a>
-		</div>
-	</div>
-
-
-	<!-- //about -->
-	<!-- about-bottom -->
-	<div class="agileits-about-btm">
-		<div class="container">
-			<div class="w3-flex">
-			<div class="col-md-4 col-sm-4 col-xs-12 ab1 agileits-about-grid1">
-				<span class="fa fa-trophy" aria-hidden="true"></span>
-				<h4 class="agileinfo-head">awards</h4>
-				<h5>best use of software in app</h5>
-				<p>Sense 360 Hack-A-Thon winner.</p>
-			</div>
-			<div class="col-md-4 col-sm-4 ab1 agileits-about-grid2">
-				<span class="fa fa-graduation-cap  wthree-title-list" aria-hidden="true"></span>
-				<h4 class="agileinfo-head">education</h4>
-				<h5>AA Computer Science</h5>
-				<p>Cerritos College</p>
-				<h5>Bachelor Degree Computer Science</h5>
-				<p>2017-present</p>
-				<h5>Lakewood High School</h5>
-				<p>Graduate of 2011 Class</p>
-			</div>
-			<div class="col-md-4 col-sm-4 ab1 agileits-about-grid3">
-				<span class="fa fa-shield  wthree-title-list" aria-hidden="true"></span>
-				<h4 class="agileinfo-head">expertise</h4>
-				<h5>Senior iOS Developer</h5>
-				<p>2015-Current</p>
-				<h5>Web Developer</h5>
-				<p>2016-Current</p>
-			</div>
-			<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
-
-
-	<!-- //about-bottom -->
-	<!-- skills -->
-	<div class="agile-service w3ls-section" id="skills">
-		<div class="container">
-			<div class="col-md-5 w3_agileits-service-left">
-				<h3 class="agileits-title">skills</h3>
-			</div>
-			<div class="col-md-7 skills-right">
-				<div class="vertical-skills  pull-right xs-center">
-					<ul class="list-inline">
-						<li>
-							<div class="skill" style="height:80%; background:#3399ff;"><span class="value">80%</span></div><span class="title">HTML</span></li>
-						<li>
-							<div class="skill" style="height:80%; background:#ffcc99;"><span class="value">80%</span></div><span class="title">CSS</span></li>
-						<li>
-							<div class="skill" style="height:100%; background:#ff9966;"><span class="value">100%</span></div><span class="title">Swift</span></li>
-						<li>
-							<div class="skill" style="height:100%; background:#003366;"><span class="value">100%</span></div><span class="title">C++</span></li>
-						<li>
-  						<div class="skill" style="height:75%; background:#3399ff;"><span class="value">75%</span></div><span class="title">C</span></li>
-  					<li>
-							<div class="skill" style="height:100%; background:#ffcc99;"><span class="value">100%</span></div><span class="title">Java</span></li>
-					</ul>
-				</div>
-
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-
-	<!-- //menu -->
-	<!-- services -->
-	<div class="w3ls-section services" id="services">
-		<div class="container">
-			<h3 class="agileits-title text-center">services</h3>
-			<div class="services-w3ls-row agileits-w3layouts service1 text-center">
-				<h5>iOS Development</h5>
-				<p>I will develop your app for you</p>
-				<div class="s-top">
-					<span class="fa fa-laptop" aria-hidden="true"></span>
-				</div>
-			</div>
-			<div class="services-w3ls-row agileits-w3layouts middlegrid-w3ls">
-				<div class="col-md-4 services-grid agileits-w3layouts service2">
-					<div class="col-md-10 w3ls-sub-text">
-						<h5>Teaching Programming</h5>
-						<p>I can help you learn various programming languages</p>
-					</div>
-					<div class="col-md-2 sub-icon">
-						<span class="fa fa-caret-square-o-up" aria-hidden="true"></span>
-					</div>
-				</div>
-				<div class="col-md-4 services-grid img-agileits">
-					<img src="images/services.jpg" class="img-responsive" alt="" />
-				</div>
-				<div class="col-md-4 services-grid agileits-w3layouts service3">
-					<div class="col-md-2 sub-icon">
-						<span class="fa fa-grav" aria-hidden="true"></span>
-					</div>
-					<div class="col-md-10 w3ls-sub-text">
-						<h5>Personal Training</h5>
-						<p>I will help you get to you body goals.</p>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="services-w3ls-row agileits-w3layouts service4">
-				<div class="s-top">
-					<span class="fa fa-adjust" aria-hidden="true"></span>
-				</div>
-				<h5>seo</h5>
-				<p>Let's grow together!</p>
-			</div>
-		</div>
-	</div>
-
-
-	<!-- //services -->
-	<!-- contact -->
-	<div class="contact-w3-agileits w3ls-section" id="contact">
-		<div class="container">
-			<h3 class="agileits-title cont-w3l">Feel free to contact me</h3>
-			<div class="contact-main-w3ls">
-				<div class="col-md-6  contact-left-w3ls">
-					<div class="mail contact-grid-agileinfo">
-						<div class="col-md-4 col-sm-4 col-xs-4 contact-icon-wthree">
-							<h4>Mail me</h4>
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+							<h1 id="title">Devontae Reid</h1>
+							<p>Software Engineer</p>
 						</div>
-						<div class="col-md-8  col-sm-8 col-xs-8 contact-text-agileinfo">
-							<a href="mailto:info@example.com">devdoesit17@gmail.com</a><br>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="call contact-grid-agileinfo">
-						<div class="col-md-4 col-sm-4 col-xs-4 contact-icon-wthree">
-							<h4>Phone</h4>
-						</div>
-						<div class="col-md-8 col-sm-8 col-xs-8 contact-text-agileinfo">
-							<p>+15623350861</p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="visit wthree-social-icons contact-grid-agileinfo">
-						<div class="col-md-4 col-sm-4 col-xs-4 contact-icon-wthree">
-							<h4>Follow me</h4>
-						</div>
-						<div class="col-md-8 col-sm-8 col-xs-8 contact-text-agileinfo">
-							<ul class="w3-links">
-								<li><a href="https://www.facebook.com/devontae.reid.37"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="https://github.com/QuestCode"><i class="fa fa-github"></i></a></li>
-								<li><a href="https://www.linkedin.com/in/devontae-reid-28ab74aa"><i class="fa fa-linkedin"></i></a></li>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+								<li><a href="#resume" id="resume-link" class="skel-layers-ignoreHref"><span class="icon fa-newspaper-o">Resume</span></a></li>
+								<li><a href="#entertainment" id="resume-link" class="skel-layers-ignoreHref"><span class="icon fa-music">Music</span></a></li>
+								<!-- <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li> -->
 							</ul>
-						</div>
-						<div class="clearfix"></div>
-					</div>
+						</nav>
+
 				</div>
-				<div class="contact-main">
-					<div class="col-md-6 agileits-main-right">
-						<form action="#" method="post" class="agile_form">
-							<label class="header">Name</label>
-							<div class="icon1 w3ls-name1">
-								<input placeholder=" " name="first name" type="text" required="">
-							</div>
-							<div class="icon2">
-								<label class="header">Email</label>
-								<input placeholder=" " name="Email" type="email" required="">
-							</div>
-							<label class="header">your message</label>
-							<textarea class="w3l_summary" required=""></textarea>
-							<input type="submit" value="SEND">
-						</form>
-					</div>
-					<div class="clearfix"></div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li> -->
+							<li><a href="https://www.facebook.com/devontae.reid.37" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<!--	<li><a href="https://www.facebook.com/devontae.reid.37" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li> -->
+							<li><a href="https://github.com/QuestCode" class="icon fa-github"><span class="label">Github</span></a></li>
+							 <li><a href="https://www.linkedin.com/in/devontae-reid-28ab74aa" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:devdoesit17@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
 				</div>
+
 			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt">Simplicity is the ultimate sophistication.</h2>
+							</header>
+
+							<!--
+							<footer>
+								<a href="#about" class="button scrolly">View</a>
+							</footer>
+						-->
+						</div>
+					</section>
+
+					<!-- About Me -->
+						<section id="about" class="two">
+							<div class="container">
+
+								<header>
+									<h2>About Me</h2>
+								</header>
+
+								<a href="#" class="image featured"><img src="images/hiking1.jpg" alt="" height="60%" /></a>
+
+								<p>I am an iOS developer currently at California State University, Fullerton
+				          studying Computer Science. I am also a sport enthusiast who really loves the
+				          game of football. If I am not programming I am watching sports.
+								</p>
+
+							</div>
+						</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="three">
+						<div class="container">
+
+							<header>
+								<h2>Portfolio</h2>
+							</header>
+
+							<p>All life is an experiment. The more experiments you make the better.</p>
+							<p> - Ralph Waldo Emerson </p>
+
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/dodger_game1.jpg" alt="" /></a>
+										<header>
+											<h3>Dodger Baseball</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/los_angeles.jpg" alt="" /></a>
+										<header>
+											<h3>Home</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/izzy_grad.jpg" alt="" /></a>
+										<header>
+											<h3>Izzy Graduation</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u$ 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/paddle_boarding.jpg" alt="" /></a>
+										<header>
+											<h3>Paddle Boarding</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/dodger_game2.jpg" alt="" /></a>
+										<header>
+											<h3>Dodger Baseball</h3>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+					<!-- Resume -->
+						<section id="resume" class="four">
+							<div class="container">
+
+								<header>
+									<h2>Resume</h2>
+								</header>
+               <div class="row">
+								<div class="6u 12u$(mobile)">
+									<span class="icon fa-trophy">
+										<h3 class="alt">Awards</h3>
+									</span>
+									<article class="item">
+										<h4>Best use of software in app</h4>
+										<p>Sense 360 Hack-A-Thon winner.</p>
+									</article>
+								</div>
+								<div class="6u 12u$(mobile)">
+									<span class="icon fa-graduation-cap">
+										<h3 class="alt">Education</h3>
+									</span>
+									<article class="item">
+										<h4>ASSOCIATE OF SCIENCE: COMPUTER SCIENCE</h4>
+										<p>Cerritos College</p>
+										<p>2016 - 2017</p>
+									</article>
+									<article class="item">
+										<h4>BACHELOR OF SCIENCE: COMPUTER SCIENCE</h4>
+										<p>California State University, Fullerton</p>
+										<p>2017 - Present</p>
+									</article>
+								</div>
+								</div>
+							</div>
+						</section>
+
+
+						<!-- Music -->
+					<section id="entertainment" class="five">
+						<div class="container">
+							<header>
+								<h2>Entertainment</h2>
+							</header>
+						<iframe src="https://tools.applemusic.com/embed/v1/playlist/pl.pm-20e9f373919da0800e44e336bcd81001?country=us" height="500px" width="100%" frameborder="0"></iframe>
+					</div>
+				</section>
+
+				<!-- Contact -->
+				<!--
+					<section id="contact" class="six">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p>I am ready to help get you to where you want to be.</p>
+
+							<form method="post" action="#">
+								<div class="row">
+									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="12u$">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="12u$">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
+		-->
 		</div>
-	</div>
-	<!-- //contact -->
-	<div class="agileits_w3layouts-footer">
-		<p>© 2018 Designer. All rights reserved </p>
-	</div>
-	<!-- start-smooth-scrolling -->
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
+		<!-- Footer -->
+			<div id="footer">
 
-				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
-				}, 1000);
-			});
-		});
-	</script>
-	<!-- //end-smooth-scrolling -->
-	<!-- smooth-scrolling-of-move-up -->
-	<script type="text/javascript">
-		$(document).ready(function () {
-			/*
-			var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear'
-			};
-			*/
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; devdoesit. All rights reserved.</li>
+					</ul>
 
-			$().UItoTop({
-				easingType: 'easeOutQuart'
-			});
+			</div>
 
-		});
-	</script>
-<script type="text/javascript" src="js/SmoothScroll.min.js"></script>
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="js/bootstrap.js"></script>
-</body>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
