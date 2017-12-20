@@ -686,7 +686,7 @@ div#services h3 {
 .services-w3ls-row.agileits-w3layouts.service1:before,
 .services-w3ls-row.agileits-w3layouts.service4:before {
     content: '';
-    background: #fff;
+    background: #3399ff;
     display: block;
     width: 21%;
     left: 39%;
